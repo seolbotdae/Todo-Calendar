@@ -1,13 +1,23 @@
+html {
+  height: 100%;
+}
+
+body {
+  display: flex;
+
+  flex-direction: column;
+
+  height: inherit;
+}
+
 .header {
+  padding-top: 3px;
   height: 60px;
 
   background-color: #ceb0b0;
 }
 
 .header nav {
-  position: relative;
-  top: 5px;
-
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -29,7 +39,8 @@
   font-size: 1.4em;
   font-weight: 900;
 
-  padding: 20px;
+  padding: 10px;
+  margin-left: 10px;
 }
 
 .header nav ul {
@@ -53,4 +64,99 @@
   border: #ceb0b0 1px solid;
 
   margin-right: 1em;
+}
+
+section {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+  flex: 1 1 0;
+  background-color: #ccf5f8;
+}
+
+section .schedule-ui-wrapper {
+  display: flex;
+  flex-direction: column;
+
+  min-width: 600px;
+  flex: 1 1 55%;
+
+  background-color: bisque;
+}
+
+section .schedule-date-wrapper {
+  display: flex;
+  flex-direction: column;
+
+  justify-content: center;
+  align-items: center;
+
+  margin-top: 70px;
+}
+
+section .schedule-date-wrapper .schedule-year {
+  font-size: 1.5em;
+  font-weight: 700;
+}
+
+section .schedule-date-wrapper .schedule-date {
+  font-size: 1.5em;
+  font-weight: 700;
+
+  padding: 40px 100px;
+}
+
+section .schedule-ring-wrapper {
+  display: flex;
+
+  justify-content: center;
+}
+
+section .schedule-ring-wrapper .schedule-ring {
+  display: flex;
+  flex-direction: column;
+
+  background-image: url("/images/clock.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+
+  justify-content: center;
+  align-items: center;
+
+  border-radius: 50%;
+
+  min-height: 600px;
+  min-width: 600px;
+}
+
+section .schedule-ring-wrapper .schedule-ring .inner-ring {
+  background-color: #d1d0d0;
+
+  display: flex;
+  flex-direction: column;
+
+  justify-content: center;
+  align-items: center;
+
+  height: 420px;
+  width: 420px;
+
+  border-radius: 50%;
+}
+
+section .schedule-ring-wrapper .schedule-ring .inner-ring .inner-inner-ring {
+  background-color: #f8f8f8;
+
+  height: 340px;
+  width: 340px;
+
+  border-radius: 50%;
+}
+
+section .schedule-content-wrapper {
+  display: flex;
+  flex-direction: column;
+
+  flex: 1 1 45%;
 }
