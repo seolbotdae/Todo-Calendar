@@ -128,7 +128,177 @@ section .schedule-ring-wrapper .schedule-ring {
 
   min-height: 600px;
   min-width: 600px;
+
+  position: relative;
 }
+
+section .schedule-ring-wrapper .schedule-ring .time-wrapper {
+  position: absolute;
+
+  width: 600px;
+  height: 600px;
+}
+
+/* 
+시간표시를 위한 코드 시작 
+유심히 봐도 의미가 없을 수 있음.
+*/
+
+.time {
+  padding: 30px;
+
+  border-radius: 50%;
+}
+
+.time:hover {
+  background-color: rgba(45, 246, 89, 0.206);
+}
+
+.t00 {
+  position: absolute;
+  top: -20px;
+  left: 269px;
+}
+
+.t01 {
+  position: absolute;
+  top: -9px;
+  left: 344px;
+}
+
+.t02 {
+  position: absolute;
+  top: 20px;
+  left: 413px;
+}
+
+.t03 {
+  position: absolute;
+  top: 66px;
+  left: 473px;
+}
+
+.t04 {
+  position: absolute;
+  top: 126px;
+  left: 518px;
+}
+
+.t05 {
+  position: absolute;
+  top: 194px;
+  left: 547px;
+}
+
+.t06 {
+  position: absolute;
+  top: 270px;
+  left: 557px;
+}
+
+.t07 {
+  position: absolute;
+  top: 346px;
+  left: 547px;
+}
+
+.t08 {
+  position: absolute;
+  top: 415px;
+  left: 518px;
+}
+
+.t09 {
+  position: absolute;
+  top: 475px;
+  left: 473px;
+}
+
+.t10 {
+  position: absolute;
+  top: 520px;
+  left: 413px;
+}
+
+.t11 {
+  position: absolute;
+  top: 548px;
+  left: 344px;
+}
+
+.t12 {
+  position: absolute;
+  top: 560px;
+  left: 269px;
+}
+
+.t13 {
+  position: absolute;
+  top: 548px;
+  left: 194px;
+}
+
+.t14 {
+  position: absolute;
+  top: 520px;
+  left: 125px;
+}
+
+.t15 {
+  position: absolute;
+  top: 475px;
+  left: 65px;
+}
+
+.t16 {
+  position: absolute;
+  top: 415px;
+  left: 20px;
+}
+
+.t17 {
+  position: absolute;
+  top: 346px;
+  left: -9px;
+}
+
+.t18 {
+  position: absolute;
+  top: 270px;
+  left: -20px;
+}
+
+.t19 {
+  position: absolute;
+  top: 195px;
+  left: -10px;
+}
+
+.t20 {
+  position: absolute;
+  top: 126px;
+  left: 19px;
+}
+
+.t21 {
+  position: absolute;
+  top: 66px;
+  left: 65px;
+}
+
+.t22 {
+  position: absolute;
+  top: 20px;
+  left: 125px;
+}
+
+.t23 {
+  position: absolute;
+  top: -9px;
+  left: 195px;
+}
+
+/* 시간표시를 위한 코드 끝 */
 
 section .schedule-ring-wrapper .schedule-ring .inner-ring {
   background-color: #d1d0d0;
@@ -146,6 +316,12 @@ section .schedule-ring-wrapper .schedule-ring .inner-ring {
 }
 
 section .schedule-ring-wrapper .schedule-ring .inner-ring .inner-inner-ring {
+  display: flex;
+  flex-direction: row;
+
+  justify-content: center;
+  align-items: center;
+
   background-color: #f8f8f8;
 
   height: 340px;
