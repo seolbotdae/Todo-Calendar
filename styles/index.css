@@ -158,5 +158,60 @@ section .schedule-content-wrapper {
   display: flex;
   flex-direction: column;
 
+  justify-content: space-around;
+  align-items: center;
+
+  min-height: 500px;
+
   flex: 1 1 45%;
+}
+
+section .schedule-content-wrapper .schedule-todo-wrapper {
+}
+
+section .schedule-content-wrapper .schedule-todo-wrapper h1 {
+  font-size: 1.6em;
+  font-weight: 900;
+
+  margin-bottom: 10px;
+  margin-top: 30px;
+}
+
+section .schedule-content-wrapper .schedule-todo-wrapper li {
+  font-size: 1.2em;
+
+  padding: 12px;
+}
+
+section .schedule-content-wrapper .schedule-todo-wrapper li span {
+  border-radius: 40px;
+  background-color: aqua;
+
+  padding: 5px 15px;
+  margin: 5px;
+}
+
+section .schedule-content-wrapper .schedule-did-wrapper {
+}
+
+section .schedule-content-wrapper .schedule-did-wrapper h1 {
+  font-size: 1.6em;
+  font-weight: 900;
+
+  margin-bottom: 10px;
+  margin-top: 30px;
+}
+
+section .schedule-content-wrapper .schedule-did-wrapper li {
+  font-size: 1.2em;
+
+  padding: 12px;
+}
+
+section .schedule-content-wrapper .schedule-did-wrapper li span {
+  border-radius: 40px;
+  background-color: aqua;
+
+  padding: 5px 15px;
+  margin: 5px;
 }
